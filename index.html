@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>México Endémico - Conservación de Especies Únicas</title>
+    <meta name="description" content="Portal interactivo sobre la biodiversidad, importancia ecológica y conservación de las especies endémicas de México.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+      <header>
+          <nav class="navbar navbar-expand-md navbar-light bg-white fixed-top shadow-sm py-2">
+              <div class="container-fluid max-width-container">
+                  <!-- logo -->
+                  <a class="navbar-brand py-0" href="index.html">
+                      <img src="img/icono%20inicio.png" alt="Inicio - México Endémico" style="height: 40px; width: auto;">
+                  </a>
+                  
+                  <!-- botón hamburguesa (móvil) -->
+                  <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Cambiar navegación">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+                  
+                  <!-- links del nav -->
+                  <div class="collapse navbar-collapse" id="mainNavbar">
+                      <ul class="navbar-nav ms-auto align-items-center gap-2 mt-2 mt-md-0">
+                          <li class="nav-item">
+                              <a class="nav-link px-3 fw-bold" href="index.html">Inicio</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link px-3 fw-bold" href="especies.html">Especies</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link px-3 fw-bold" href="problemas.html">Problemas</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link px-3 fw-bold" href="contacto.html">Contáctanos</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link px-3 fw-bold" href="juegos.html">Juegos</a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </nav>
+      </header>
+
+      <main>
+          <!-- carrusel hero -->
+          <section class="section-carrusel">
+              <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="6000">
+                  <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                  </div>
+                  <div class="carousel-inner">
+                      <!-- ajolote -->
+                      <div class="carousel-item active">
+                          <img src="img/ajolotec.png" alt="Ajolote Mexicano">
+                          <div class="carousel-caption">
+                              <h1>AJOLOTE MEXICANO</h1>
+                              <p>El ajolote (*Ambystoma mexicanum*) es uno de los anfíbios más fascinantes del mundo. Esta salamandra endémica de los lagos de Xochimilco destaca tanto por su misticismo prehispánico como por su asombrosa capacidad de regenerar sus órganos y tejidos.</p>
+                          </div>
+                      </div>
+                      <!-- cempasúchil -->
+                      <div class="carousel-item">
+                          <img src="img/flor.png" alt="Flor de Cempasúchil">
+                          <div class="carousel-caption">
+                              <h1>FLOR DE CEMPASÚCHIL</h1>
+                              <p>La flor de cempasúchil (*Tagetes erecta*), conocida como la "flor de veinte pétalos", es un ícono ceremonial de México. Su color anaranjado encendido y su profundo aroma guían el camino de las almas durante el Día de Muertos.</p>
+                          </div>
+                      </div>
+                      <!-- loro yucateco -->
+                      <div class="carousel-item">
+                          <img src="img/loro.png" alt="Loro Yucateco">
+                          <div class="carousel-caption">
+                              <h1>LORO YUCATECO</h1>
+                              <p>El loro yucateco (*Amazona xantholora*) destaca por su frente amarilla y un vibrante plumaje esmeralda. Habitante exclusivo de la selva seca de la Península de Yucatán, es una joya alada amenazada por el tráfico ilegal.</p>
+                          </div>
+                      </div>
+                      <!-- teporingo -->
+                      <div class="carousel-item">
+                          <img src="img/teporingo.png" alt="Teporingo o Conejo de los Volcanes">
+                          <div class="carousel-caption">
+                              <h1>TEPORINGO</h1>
+                              <p>El teporingo o zacatuche (*Romerolagus diazi*) es el conejo más pequeño de México. Es un mamífero primitivo que habita exclusivamente en los zacatonales alpinos que rodean los volcanes del centro del país.</p>
+                          </div>
+                      </div>
+                      <!-- vaquita marina -->
+                      <div class="carousel-item">
+                          <img src="img/vaca.png" alt="Vaquita Marina">
+                          <div class="carousel-caption">
+                              <h1>VAQUITA MARINA</h1>
+                              <p>La vaquita marina (*Phocoena sinus*) es la marsopa más pequeña y amenazada del planeta. Endémica del Alto Golfo de California, se encuentra al borde de la extinción debido a la pesca incidental.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Anterior</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Siguiente</span>
+                  </button>
+              </div>
+          </section>
+
+          <!-- intro -->
+          <section class="intro-section my-0">
+              <div class="container">
+                  <div class="row g-5 align-items-center">
+                      <div class="col-md-6">
+                          <div class="media-card overflow-hidden">
+                              <img class="img-fluid w-100 rounded-4 shadow-sm" src="img/especies%20de%20mexico-12.png" alt="Especies Endémicas de México">
+                          </div>
+                      </div>
+                      <div class="col-md-6">
+                          <span class="species-badge mb-3">Introducción</span>
+                          <h2 class="title-text display-5 fw-bold mb-4">¿Qué son las Especies Endémicas?</h2>
+                          <p class="text-muted text-justify">
+                              Las especies endémicas son aquellas que se encuentran de manera exclusiva en una región geográfica específica y no habitan en ninguna otra parte del planeta. México, debido a su compleja topografía, variedad de climas y aislamiento de ciertas zonas, alberga una cantidad asombrosa de especies endémicas. Su existencia es el resultado de millones de años de procesos evolutivos adaptados a microclimas únicos, lo que las convierte en componentes irremplazables de la biodiversidad global y en piezas clave para el equilibrio y salud de sus respectivos ecosistemas.
+                          </p>
+                          <p class="text-muted text-justify">
+                              Lamentablemente, esta exclusividad geográfica las hace sumamente vulnerables. Factores como la pérdida de hábitat por actividades agrícolas y urbanas, la contaminación, el cambio climático y la introducción de especies exóticas invasoras representan amenazas críticas que las colocan al borde de la extinción. Conservar estas especies no es solo un deber ético, sino una necesidad ecológica y científica: cada pérdida altera irreversiblemente las cadenas tróficas y nos priva de recursos genéticos únicos que sostienen la vida en nuestro territorio.
+                          </p>
+                      </div>
+                  </div>
+              </div>
+          </section>
+
+          <!-- tarjetas de contenido -->
+          <section class="py-5 bg-white">
+              <div class="container">
+                  <div class="text-center mb-5">
+                      <span class="species-badge mb-2">Explora</span>
+                      <h2 class="title-text display-5 fw-bold">Contenidos del Sitio</h2>
+                  </div>
+                  <div class="row g-4 justify-content-center">
+                      <!-- especies -->
+                      <div class="col-md-6 col-lg-3 d-flex">
+                          <div class="card content-card w-100 border-0 shadow-sm d-flex flex-column">
+                              <div class="content-card-img-wrapper">
+                                  <img src="img/especies%20de%20mexico_Mesa%20de%20trabajo%201%20copia.png" class="card-img-top" alt="México Endémico">
+                              </div>
+                              <div class="card-body d-flex flex-column p-4">
+                                  <h5 class="card-title fw-bold text-success">MÉXICO ENDÉMICO</h5>
+                                  <p class="card-text text-muted flex-grow-1">
+                                      Explora las diferentes especies endémicas de México, su hábitat, comportamiento, datos curiosos y más.
+                                  </p>
+                                  <div class="text-center mt-auto">
+                                      <a href="especies.html" class="btn btn-submit text-white w-100 py-2">DESCUBRIR</a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <!-- problemas -->
+                      <div class="col-md-6 col-lg-3 d-flex">
+                          <div class="card content-card w-100 border-0 shadow-sm d-flex flex-column">
+                              <div class="content-card-img-wrapper">
+                                  <img src="img/contaminacion.jpeg" class="card-img-top" alt="Problemas Ambientales">
+                              </div>
+                              <div class="card-body d-flex flex-column p-4">
+                                  <h5 class="card-title fw-bold text-success">PROBLEMAS AMBIENTALES</h5>
+                                  <p class="card-text text-muted flex-grow-1">
+                                      Descubre las amenazas críticas que enfrentan y cómo puedes generar un cambio positivo para conservarlas.
+                                  </p>
+                                  <div class="text-center mt-auto">
+                                      <a href="problemas.html" class="btn btn-submit text-white w-100 py-2">DESCUBRIR</a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <!-- juegos -->
+                      <div class="col-md-6 col-lg-3 d-flex">
+                          <div class="card content-card w-100 border-0 shadow-sm d-flex flex-column">
+                              <div class="content-card-img-wrapper">
+                                  <img src="img/juegos.jpeg" class="card-img-top" alt="Juegos Interactivos">
+                              </div>
+                              <div class="card-body d-flex flex-column p-4">
+                                  <h5 class="card-title fw-bold text-success">JUEGOS INTERACTIVOS</h5>
+                                  <p class="card-text text-muted flex-grow-1">
+                                      Pon a prueba tus conocimientos en divertidas dinámicas interactivas. ¡Compite con tus amigos!
+                                  </p>
+                                  <div class="text-center mt-auto">
+                                      <a href="juegos.html" class="btn btn-submit text-white w-100 py-2">DESCUBRIR</a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <!-- contacto -->
+                      <div class="col-md-6 col-lg-3 d-flex">
+                          <div class="card content-card w-100 border-0 shadow-sm d-flex flex-column">
+                              <div class="content-card-img-wrapper">
+                                  <img src="img/contacto.png" class="card-img-top" alt="Contáctanos">
+                              </div>
+                              <div class="card-body d-flex flex-column p-4">
+                                  <h5 class="card-title fw-bold text-success">CONTÁCTANOS</h5>
+                                  <p class="card-text text-muted flex-grow-1">
+                                      Síguenos en redes sociales o déjanos un mensaje. Queremos conocer tus opiniones e ideas.
+                                  </p>
+                                  <div class="text-center mt-auto">
+                                      <a href="contacto.html" class="btn btn-submit text-white w-100 py-2">DESCUBRIR</a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </section>
+
+          <!-- formulario + video -->
+          <section class="py-5 bg-light">
+              <div class="container">
+                  <div class="row g-5 align-items-center">
+                      <!-- formulario -->
+                      <div class="col-md-6">
+                          <div class="card bg-glass rounded-4 p-4 p-md-5">
+                              <span class="species-badge mb-2">Mensaje</span>
+                              <h2 class="title-text fw-bold mb-4">Contáctanos</h2>
+                              <form class="needs-validation" novalidate>
+                                  <div class="form-floating mb-3">
+                                      <input type="text" class="form-control" id="nombre" placeholder="Nombre completo" required minlength="3">
+                                      <label for="nombre">Nombre completo</label>
+                                      <div class="invalid-feedback">Por favor ingresa tu nombre (mínimo 3 caracteres).</div>
+                                  </div>
+                                  <div class="form-floating mb-3">
+                                      <input type="email" class="form-control" id="email" placeholder="Correo electrónico" required>
+                                      <label for="email">Correo electrónico</label>
+                                      <div class="invalid-feedback">Por favor ingresa un correo electrónico válido.</div>
+                                  </div>
+                                  <div class="form-floating mb-4">
+                                      <textarea class="form-control" id="mensaje" placeholder="Mensaje" style="height: 120px" required minlength="10"></textarea>
+                                      <label for="mensaje">Tu mensaje o comentario</label>
+                                      <div class="invalid-feedback">Por favor escribe tu mensaje (mínimo 10 caracteres).</div>
+                                  </div>
+                                  <button type="submit" class="btn btn-submit text-white w-100 py-3 fw-bold rounded-3">Enviar Mensaje</button>
+                              </form>
+                              <div id="mensaje-exito" class="alert alert-success d-none mt-4 fade-in-up" role="alert">
+                                  ¡Gracias por escribirnos! Tu mensaje ha sido recibido con éxito. Nos pondremos en contacto contigo pronto.
+                              </div>
+                          </div>
+                      </div>
+                      <!-- video -->
+                      <div class="col-md-6">
+                          <div class="text-center mb-3 text-lg-start">
+                              <span class="species-badge mb-2">Multimedia</span>
+                              <h3 class="card-title-text fw-bold">Video de Divulgación</h3>
+                              <p class="text-muted">Aprende más sobre las especies que compartimos en este espacioajolote lorovajuego.</p>
+                          </div>
+                          <div class="media-card overflow-hidden shadow">
+                              <div class="ratio ratio-16x9 bg-dark">
+                                   <iframe 
+            class="w-100 h-100"
+            src="https://www.youtube.com/embed/mT3tU0IuMgw"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </section>
+      </main>
+
+
+      <footer style="background-color: #122016;" class="text-white py-5">
+          <div class="container">
+              <div class="row align-items-center">
+                  <div class="col-md-6 text-center text-md-start mb-4 mb-md-0">
+                      <h5 class="mb-1 text-white-50">© 2026 México Endémico. Todos los derechos reservados.</h5>
+                      <small class="text-muted">Elaborado por Jonathan Contreras Durán</small>
+                  </div>
+                  <div class="col-md-6 text-center text-md-end">
+                      <div class="d-flex justify-content-center justify-content-md-end gap-3 align-items-center">
+                          <a href="https://www.youtube.com/@eljonas7348/videos" target="_blank" aria-label="YouTube" class="text-white">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="footer-logo" viewBox="0 0 16 16">
+                                  <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.104 1.981l-.014.134-.018.154-.014.114c-.074.505-.147.98-.251 1.347a2.007 2.007 0 0 1-1.415 1.419c-1.121.303-5.29.333-6.137.335h-.089c-.813-.003-4.937-.033-6.05-.335A2.007 2.007 0 0 1 .44 11.386c-.1-.366-.174-.841-.248-1.347l-.013-.114-.022-.178-.008-.114C.057 8.76.049 7.904.048 7.717v-.075c.001-.194.01-1.108.104-1.981l.014-.134.018-.154.014-.114C.27 4.793.342 4.318.448 3.95a2.007 2.007 0 0 1 1.415-1.419c1.114-.3 5.27-.33 6.118-.33zM6.93 4.99v4.02l3.41-2.01z"/>
+                              </svg>
+                          </a>
+                          <a href="https://www.tiktok.com/@eljonas171" target="_blank" aria-label="TikTok" class="text-white">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="footer-logo" viewBox="0 0 16 16">
+                                  <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+                              </svg>
+                          </a>
+                          <a href="https://open.spotify.com/playlist/6qp98tfO25YmbMtqhwcALF?si=b0c4787137e74e6c" target="_blank" aria-label="Spotify" class="text-white">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="footer-logo" viewBox="0 0 16 16">
+                                  <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.669 11.538a.5.5 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.5.5 0 0 1-.222-.976c3.055-.697 5.663-.396 7.768.89a.5.5 0 0 1 .168.691m.958-2.185a.6.6 0 0 1-.825.2c-2.15-1.321-5.428-1.704-7.965-.933a.6.6 0 0 1-.35-1.146c2.897-.877 6.514-.44 8.94 1.05a.6.6 0 0 1 .2 1.229m.079-2.338c-2.578-1.53-6.827-1.67-9.288-.923a.75.75 0 1 1-.437-1.436c2.837-.86 7.525-.692 10.513 1.082a.75.75 0 0 1-.788 1.277z"/>
+                              </svg>
+                          </a>
+                          <a href="https://www.instagram.com/el.jonas.p/" target="_blank" aria-label="Instagram" class="text-white">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="footer-logo" viewBox="0 0 16 16">
+                                  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                              </svg>
+                          </a>
+                          <a href="https://www.facebook.com/jonathan.contreras.653650/" target="_blank" aria-label="Facebook" class="text-white">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="footer-logo" viewBox="0 0 16 16">
+                                  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                              </svg>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </footer>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+      <script>
+          // validación del formulario
+          (function () {
+              'use strict'
+              var forms = document.querySelectorAll('.needs-validation')
+              Array.prototype.slice.call(forms).forEach(function (form) {
+                  form.addEventListener('submit', function (event) {
+                      event.preventDefault()
+                      event.stopPropagation()
+
+                      if (form.checkValidity()) {
+                          form.classList.add('d-none')
+                          document.getElementById('mensaje-exito').classList.remove('d-none')
+                      } else {
+                          form.classList.add('was-validated')
+                      }
+                  }, false)
+              })
+          })()
+      </script>
+  </body>
+</html>
